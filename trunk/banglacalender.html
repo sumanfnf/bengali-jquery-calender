@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+<script src="jquery.js"></script>
+<script src="jquery-ui-bangla.js"></script>
+<link href="jquery-ui.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script>
+
+
+
+            $(function() {
+			 $.datepicker.setDefaults($.datepicker.regional['bn-BD']);
+                $( "#DATE_OF_BIRTH" ).datepicker({
+                    dateFormat: "yy/mm/dd",                 
+                    changeMonth: true,
+                    changeYear: true
+                },$.datepicker.regional['bn-BD']);
+            });
+</script>
+
+</head>
+<body>
+<input type="text" id="DATE_OF_BIRTH" />
+
+
+</body>
+</html>
